@@ -111,7 +111,7 @@ The .NET Development Utility (DNU) is responsible for all operations involving p
 	
 For a list of usage, arguments, and options of the ``install`` command, enter the following in the command windows::
 
-	dnu help install
+	dnu install --help
 	
 For more information about ``dnu`` commands, see `.NET Development Utility (DNU) <https://github.com/aspnet/Home/wiki/DNX-utility>`_.
 
@@ -307,7 +307,7 @@ To run commands out of a different project, you can use the ``--project`` option
 For a Console Application, the entry point is the ``Main`` method of the ``Program`` class. For more information about the Web Application startup process, see :doc:`/fundamentals/startup`.
 
 
-When your run your app, you can specify whether to compile in Debug mode or in Release mode. You can specify the ``configuration`` option as follows::
+When you run your app, you can specify whether to compile in Debug mode or in Release mode. You can specify the ``configuration`` option as follows::
 
 	dnx --configuration Debug
 
@@ -369,7 +369,7 @@ When building a DNX based application, such as by using ``dnu build`` or via pac
 
 For a list of usage, arguments, and options of the ``build`` command, enter the following in the command windows::
 
-	dnu help build
+	dnu build --help
 
 Including/Excluding files
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -399,7 +399,7 @@ The most common sections that you will see for including and excluding files are
 
 * The *publishExclude* section allows you to exclude files from the publish output of your project. In this example, all *.xproj*, *.user*, and *.vspscc* files from the output of the publish command. 
 
-.. note:: Most sections of the *project.json* file that deal with files allow `glob patterns <https://en.wikipedia.org/wiki/Glob_programming>`_, which often called wildcards. 
+.. note:: Most sections of the *project.json* file that deal with files allow `glob patterns <https://en.wikipedia.org/wiki/Glob_programming>`_, which are often called wildcards. 
 
 List of include/exclude properties
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -595,7 +595,7 @@ The appName directory will contain all of your applications code, if you have pr
 
 The publish command will also hoist any commands from your *project.json* file into batch files. Running any of these commands is the same as running  ``dnx <command>``. For a list of usage, arguments, and options of the ``publish`` command, enter the following in the command windows::
 
-	dnu help publish
+	dnu publish --help
 
 Scripts
 -------
