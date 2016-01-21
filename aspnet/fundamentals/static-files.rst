@@ -108,7 +108,7 @@ In order for the user to browse the ``MyStaticFiles`` directory, you can configu
   {
     ...
     // Add the ability for the user to browse the MyStaticFiles directory.
-    app.UseDirectoryBrowser(new DirectoryBrowserptions()
+    app.UseDirectoryBrowser(new DirectoryBrowserOptions()
     {
         FileProvider = new PhysicalFileProvider(@"D:\Source\WebApplication1\src\WebApplication1\MyStaticFiles"),
         RequestPath = new PathString("/StaticFiles")
@@ -156,7 +156,7 @@ To specify a different default file from the ones listed above, instantiate a ``
     app.UseStaticFiles();
     ...
 
-Now, if the user browses to a directory in the webroot with a file named ``mydefault.htm``, that file will be served as though the user typed in the fully qualified URI.
+Now, if the user browses to a directory in the webroot with a file named ``mydefault.html``, that file will be served as though the user typed in the fully qualified URI.
 
 But, what if you want to serve a default page from a directory that is outside the webroot directory? You could call both the ``UseStaticFiles`` and ``UseDefaultFiles`` methods passing in identical values for each method's parameters. However, it's much more convenient and recommended to call the ``UseFileServer`` method, which is covered in the next section.
 

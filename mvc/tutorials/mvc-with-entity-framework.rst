@@ -73,7 +73,7 @@ Open the *project.json* file. In the dependencies section, add the following lin
 
   "dependencies": {
     ...
-    "EntityFramework.SqlServer": "7.0.0-rc1-final"
+    "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final"
   },
 
 When you save *project.json*, Visual Studio automatically resolves the new package reference.
@@ -180,7 +180,7 @@ Open a command prompt in the project directory (ContosoBooks/src/ContosoBooks) a
     dnx ef migrations add Initial
     dnx ef database update
 
-The "``add Initial``" command adds code to the project that allows EF to update the database schema. The "``upate``" command creates or updates the actual database. After you run the run these commands, your project has a new folder named *Migrations*:
+The "``add Initial``" command adds code to the project that allows EF to update the database schema. The "``update``" command creates or updates the actual database. After you run the run these commands, your project has a new folder named *Migrations*:
 
 .. image:: mvc-with-entity-framework/_static/migrations.png
 
